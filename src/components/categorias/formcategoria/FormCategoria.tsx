@@ -28,7 +28,7 @@ function FormCategoria() {
     }else{
 			setCategoria({
 				id: 0,
-				tipo: "",
+				nome: "",
 			})	
 		}
   }, [id])
@@ -88,10 +88,10 @@ function FormCategoria() {
           <input
             type="text"
             placeholder="Categoria"
-            name="tipo"
+            name="nome"
             className="p-2 border-2 rounded border-slate-700 bg-white"
             required
-            value={categoria.tipo}
+            value={categoria.nome}
             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
           />
         </div>

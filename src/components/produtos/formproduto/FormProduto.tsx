@@ -15,7 +15,7 @@ function FormProduto() {
 
 	const [categoria, setCategoria] = useState<Categoria>({
 		id: 0,
-		tipo: '',
+		nome: '',
 	})
 	const [produto, setProduto] = useState<Produto>({} as Produto)
 
@@ -126,7 +126,7 @@ function FormProduto() {
 		retornar()
 	}
 
-	const carregandoCategoria = categoria.tipo === ''
+	const carregandoCategoria = categoria.nome === ''
 
 	return (
 		<div className="container flex flex-col items-center mx-auto">
@@ -216,7 +216,7 @@ function FormProduto() {
 										categoria.id
 									}
 								>
-									{categoria.tipo}
+									{categoria.nome}
 								</option>
 							</>
 						))}
