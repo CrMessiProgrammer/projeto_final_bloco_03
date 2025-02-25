@@ -5,7 +5,7 @@ import FormCategoria from "./components/categorias/formcategoria/FormCategoria";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/home/Home";
-import ListarCategorias from "./components/categorias/listacategorias/ListaCategorias";
+import ListaCategorias from "./components/categorias/listacategorias/ListaCategorias";
 
 function App() {
 
@@ -18,7 +18,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />
-              <Route path="/categorias" element={<ListarCategorias />} />
+              <Route path="/categorias" element={<ListaCategorias />} />
               <Route path="/cadastrarcategoria" element={<FormCategoria />} />
               <Route path="/editarcategoria/:id" element={<FormCategoria />} />
               <Route path="/deletarcategoria/:id" element={<DeletarCategoria />} />

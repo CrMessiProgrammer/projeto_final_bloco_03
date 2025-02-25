@@ -4,7 +4,7 @@ import { listar } from '../../../services/Service'
 import CardCategorias from '../cardcategorias/CardCategorias'
 import { DNA } from 'react-loader-spinner'
 
-function ListarCategorias() {
+function ListaCategorias() {
 	
     const [categorias, setCategorias] = useState<Categoria[]>([])
 	const [isLoading, setIsLoading] = useState<boolean>(false)
@@ -62,4 +62,4 @@ function ListarCategorias() {
 	)
 }
 
-export default ListarCategorias
+export default ListaCategorias
