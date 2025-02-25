@@ -1,4 +1,5 @@
-import { Link, MagnifyingGlass, ShoppingCart, User } from "@phosphor-icons/react"
+import { Link } from "react-router-dom"
+import { MagnifyingGlass, ShoppingCart, User } from "@phosphor-icons/react"
 
 function Navbar() {
     return (
@@ -9,7 +10,7 @@ function Navbar() {
 						<img
 							src="https://ik.imagekit.io/m1iwfxqae/performance_goal_3/favicon.png?updatedAt=1740486525788"
 							alt="Logo - Farmácia"
-							className="w-60"
+							className="w-10"
 						/>
 					</Link>
 
