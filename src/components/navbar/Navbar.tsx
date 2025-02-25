@@ -6,12 +6,13 @@ function Navbar() {
         <>
             <div className="flex justify-center w-full py-4 text-white bg-blue-800">
 				<div className="container flex items-center justify-between mx-4 text-lg">
-					<Link to="/home">
+					<Link className="flex place-items-center" to="/home">
 						<img
 							src="https://ik.imagekit.io/m1iwfxqae/performance_goal_3/favicon.png?updatedAt=1740486525788"
 							alt="Logo - Farmácia"
-							className="w-10"
+							className="w-12 mr-1.5"
 						/>
+						<p>Farmácia</p>
 					</Link>
 
 					<div className="relative flex items-center justify-center w-2/5 text-black">
@@ -40,21 +41,15 @@ function Navbar() {
 
 					<div className="flex items-center gap-4 py-4">
 						<Link
-							to="/produtos"
-							className="hover:underline"
-						>
+							to="/produtos" className="hover:underline">
 							Produtos
 						</Link>
 						<Link
-							to="/categorias"
-							className="hover:underline"
-						>
+							to="/categorias" className="hover:underline">
 							Categorias
 						</Link>
 						<Link
-							to="/cadastrarcategoria"
-							className="hover:underline"
-						>
+							to="/cadastrarcategoria" className="hover:underline">
 							Cadastrar Categoria
 						</Link>
 							<User
