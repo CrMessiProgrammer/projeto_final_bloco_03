@@ -36,7 +36,7 @@ function FormCategoria() {
   function atualizarEstado(e: ChangeEvent<HTMLInputElement>) {
     setCategoria({
       ...categoria,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value // '.name' pega o nome do input abaixo
     })
   }
 
@@ -88,7 +88,7 @@ function FormCategoria() {
           <input
             type="text"
             placeholder="Categoria"
-            name="nome"
+            name="nome" // nome que chamará na function lá em acima
             className="p-2 border-2 rounded border-slate-700 bg-white"
             required
             value={categoria.nome}
